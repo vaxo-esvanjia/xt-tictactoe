@@ -1,0 +1,170 @@
+body {
+    
+   
+    background-color: #000;
+
+  }
+  canvas {
+    position: absolute;
+
+    
+    
+  }
+  .backgroundchanger{
+    background: linear-gradient(rgb(197, 251, 90), rgb(241, 83, 83));
+    border-radius: 4px;
+    border: none;
+  }
+  
+  a {
+    position: absolute;
+    bottom: 2vmin;
+    right: 2vmin;
+    color: rgba(255,255,255,0.2);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  .sel,.main,.buttons{
+    position: relative;
+    z-index: 10;
+  }
+  /*  */
+.main{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+   z-index: 2;
+    margin: auto;
+}
+.box{
+    width:30%;
+    margin: 10px;
+    height: 150px;
+    display: flex;
+    font-size: 0px;
+    transition: 0.5s;
+    justify-content: center;
+    opacity: 0.8;
+    align-items: center;
+    font-weight: 1000;
+    background-color: rgb(154, 154, 154);
+}
+
+.results{
+  margin-left: 30px;
+    color: white;
+    
+}
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: white;
+}
+.player span{
+    font-size: 25px;
+}
+.un{
+    pointer-events: none;
+}
+.ranges{
+  z-index: 1000;
+  color: white;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  background-color: #1c1c1c8f;
+  justify-content: center;
+  align-items: center;
+  
+}
+.rangex,.ranget{
+  z-index: 1000;
+  display: flex;
+  width: 200px;
+  color: white;
+  flex-direction: column;
+
+}
+.cubeX,.cubeT{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
+.newgame, .restart{
+  margin: 10px;
+  width: 150px;
+  height: 30px;
+  font-weight: 800;
+  color: white;
+  font-size: 15px;
+  background:linear-gradient(rgb(237, 68, 68),rgb(41, 241, 41));
+}
+@media screen and (max-width:1000px) {
+  .box{
+    width: 25%;
+  }
+  .ranges{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  .main{
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+@media screen and (max-width:630px) {
+  .box{
+    width: 100px;
+    height: 100px;
+  }
+  .main{
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width:630px) {
+  .box{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+  }
+  .main{
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+@media screen and (max-width:450px) {
+  .box{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+  }
+  .main{
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+  }
+  .ranges{
+    flex-direction: column-reverse;
+  }
+}
+
+
